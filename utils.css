@@ -37,6 +37,9 @@
 .yellow{
     color: #F8CB46;
 }
+.grey{
+    color: grey;
+}
 .fade-border{
     box-shadow: 3px 1px 43px -8px #F8CB46;
 }
