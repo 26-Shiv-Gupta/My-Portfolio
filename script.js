@@ -1,15 +1,3 @@
-let header_a = document.querySelectorAll("#right ul li a");
-Array.from(header_a).forEach(function(ele){
-    ele.addEventListener('click', function(){
-        let temp = this;
-        temp.setAttribute("class", "active");
-        Array.from(header_a).forEach(function(ele){
-            if(ele != temp)
-                ele.removeAttribute('class', 'active');
-        });
-    });
-});
-
 document.getElementsByClassName("bx-list-ul")[0].addEventListener('click', function(){
     document.getElementById('header-ul').style.transition = "width 0.5s ease"
     document.getElementById('header-ul').style.transform = "translateX(-100%)";
@@ -35,9 +23,13 @@ document.getElementsByTagName('main')[0].addEventListener('click', function(){
 document.getElementById('edu-btn').addEventListener('click', function(){
     document.getElementById('edu').style.opacity = "1";
     document.getElementById('edu').style.transition = "opacity 0.2s";
-
+    this.style.borderBottom = "4px solid #FC5D6D";
+    document.getElementById('skills-btn').style.border = "none";
 });
+
 document.getElementById('skills-btn').addEventListener('click', function(){
     document.getElementById('edu').style.opacity = "0";
+    this.style.borderBottom = "4px solid #FC5D6D";
+    document.getElementById('edu-btn').style.border = "none";
 });
 
