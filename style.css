@@ -35,6 +35,7 @@
     font-size: 21px;
     font-weight: bold;
 }
+
 #header-container #right ul li a::after
 {
     content: "";
@@ -52,8 +53,9 @@
 #header-container #right ul li .active{
     color: #FC5D6D
 }
+
 #front-container{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     padding: 70px 5vw 0 5vw;
 }
@@ -121,8 +123,11 @@
 @media (max-width: 850px) {
     #front-container{
         flex-direction: column;
-        padding: 0 0;
+        padding: 70px 0 0 0;
     }   
+    #front-continer{
+        min-height: 100vh;
+    }
 }
 @media (max-width: 600px){
     #header-container #right ul{
@@ -144,6 +149,9 @@
         /* opacity: 0; */
         display: none;
     }
+    #header-container #right .black{
+        color: black;
+    }
     #header-container #right i{
         display: block;
         font-size: 30px;
@@ -154,6 +162,7 @@
     #front-container #profile-pic{
         height: 300px;
         width: 300px;
+        margin: 25px 0;
     }
     #front-container #profile-content {
         width: 70%;
@@ -163,7 +172,7 @@
 /*** about ***/
 #about-container{
     padding: 85px 5vw 5vh 5vw;
-    margin-top: 120px;
+    /* margin-top: 120px; */
 }
 #about-container #about-container2{
     min-width: 90vw;
@@ -182,41 +191,46 @@
     max-width: 50%;
     position: relative;
 }
+#about-about h1{
+    font-size: 27px;
+}
 #about-about p{
     margin-bottom: 20px;
-    font-size: 17px;
+    font-size: 19px;
 }
 #about-about h4{
     display: inline-block;
-    font-size: 20px;
-    margin: 0 10px 10px 0;
+    font-size: 25px;
+    margin: 0 40px 25px 0;
+    padding: 0 3px 3px 3px;
     cursor: pointer;
     position: relative;
+    /* border-radius: 7px; */
+}
+#skills-btn{
+    border-bottom: 4px solid #FC5D6D;
 }
 #about-about #skills{
     width: 250px;
-    height: 200px;
+    height: 250px;
+    /* border: 1px solid black; */
+}
+#skills li, #edu li{
+    margin-bottom: 7px;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+}
+#skills li span{
+    margin-right: 20px;
 }
 #about-about #edu{
     width: 250px;
-    height: 200px;
+    height: 250px;
     position: absolute;
     background-color: white;
     bottom: 0;
     opacity: 0;
 }
-/* #skills-btn::after, #edu-btn::after{
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #FC5D6D;
-}
-#edu-btn::after{
-    width: 0;
-} */
 @media (max-width: 1025px){
     #about-container #about-container2{
         flex-direction: column;
@@ -232,21 +246,7 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* /*** Projects *** */
 #project-container{
     padding:80px 5vw 5vh 5vw;
     width: 100vw;
