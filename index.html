@@ -113,18 +113,19 @@
         <div id="contact-container" class="flex-both-center">
             <div id="contact-container2" class="fade-border flex-space-around">
                 <div id="message-container" class="flex-both-center">
-                    <form id="message-container2">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="message-container2">
+                        <input type="hidden" name="access_key" value="62a45fcd-6b51-4052-8a4f-1a22cfe59fc1">
                         <div id="name" class = "message-input">
                             <h4 class="red">Full Name</h4>
-                            <input type="text" class="input-style" required placeholder="eg. Shiv Gupta">
+                            <input type="text" name="Name" class="input-style" required placeholder="eg. Shiv Gupta">
                         </div>
                         <div id="email" class = "message-input">
                             <h4 class="red">Email</h4>
-                            <input type="email" class="input-style" required placeholder="example@gmail.com">
+                            <input type="email" name="Email" class="input-style" required placeholder="example@gmail.com">
                         </div>
                         <div id="contact" class = "message-input">
                             <h4 class="red">Contact</h4>
-                            <input type="tel" class="input-style" pattern="[0-9]{10}" required placeholder="eg. 321564789">
+                            <input type="tel" name="Contact" class="input-style" pattern="[0-9]{10}" required placeholder="eg. 321564789">
                         </div>
                         <div id="message" class = "message-input">
                             <h4 class="red">Message</h4>
@@ -137,11 +138,11 @@
                 </div>
                 <div id="contact-data">
                     <h1>Contact <span class="red">Me!!</span></h1>
-                    <h4>This is just a model, You can not contact me using it. You can mail me on the given email id below.ThankYou, have a nice day to you.</h4>
-                    <a href="#" class="text-deco-none"><i class='bx bxl-instagram-alt'></i><span>Instagram</span></a><br>
-                    <a href="#" class="text-deco-none"><i class='bx bxl-linkedin-square' ></i><span>Linkedin</span><br></a>
-                    <a href="#" class="text-deco-none"><i class='bx bxl-github' ></i><span>Github</span></a><br>
-                    <a href="#" class="text-deco-none"><i class='bx bxl-gmail' ></i> <span>gedashiv9977@gmail.com</span></a>
+                    <h4>You can use this message form to send me mail. <br>ThankYou, have a nice day to you.</h4>
+                    <a href="javascript:void(0)" class="text-deco-none"><i class='bx bxl-instagram-alt'></i><span>Instagram</span></a><br>
+                    <a href="https://linkedin.com/in/26shivgupta/" class="text-deco-none"><i class='bx bxl-linkedin-square' ></i><span>Linkedin</span><br></a>
+                    <a href="https://github.com/26-Shiv-Gupta" class="text-deco-none"><i class='bx bxl-github' ></i><span>Github</span></a><br>
+                    <a href="javascript:void(0)" class="text-deco-none"><i class='bx bxl-gmail' ></i> <span>gedashiv9977@gmail.com</span></a>
                 </div>
             </div>
         </div>
